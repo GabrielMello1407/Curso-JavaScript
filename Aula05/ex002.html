@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Progama</title>
+    <title>Armazenando dados em variaveis</title>
     <style>
         body{
             background-color: rgba(0, 0, 0, 0.377);
@@ -26,9 +26,8 @@
 
     <!-- Janela de alerta (alert), Janela de confirmação (confirm), Janela de prompt(onde insire nome na janela), ctrl+L = limpa a tela do node -->
     <script>
-        window.alert('Minha primeira Mensagem')/* Coloca uma janela de alerta*/
-        window.confirm('Está gostando de JS?')/* Coloca uma janela de confirmação*/
-        window.prompt('Qual é seu nome?') /* coloca uma janela onde pode ser digitado*/
+        var nome = window.prompt('Qual é seu nome?') /* coloca uma janela onde pode ser digitado*/
+        window.alert('É um grande prazer em te conhecer, ' + nome)/* O sinal de + é de concatenação*/
         //Esse comando é para comentario que é permitido em apenas uma unica linha
         /*
         Identificadores : começa com letra,$ ou _ . Não podem começar com numeros , pode usar letras ou números, é possivel usar acentos e símbolos , não podem conter espaços, não podem ser palavras reservadas

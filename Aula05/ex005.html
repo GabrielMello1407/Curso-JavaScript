@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*Operadores Lógicos:
+        Operadores aritiméticos: realiza calculos(5+2 = 7,5-2 = 3,5*2 = 10,5/2 = 2.5,5%2 = 1,5**2 = 25)
+
+        Atribuição
+
+        Relacionais: > Maior , < Menor , >= Maior ou igual , <= Menor ou igual , == Igual, =! Diferente
+
+        Lógicos
+
+        Ternário
+        
+        */
+
+       /*Ordem de precedência dos Operadores lógicos:
+       I - ()
+       I - **
+       I - * , / , %
+       V - + , -
+
+      */
+       /*Ordem precedência Geral:
+       I - Operadores aritiméticos () , ** , / ...
+       I - Operadores Relacionais  > , < , >= ...
+       I - Operadores Lógicos ! , && , ||
+       V -
+      */
+
+
+      /*Atribuição Simples: 
+      var a = 5+3                 Memória = 8
+      var b = a%5                 Memória = 3
+      var c = 5*b**2              Memória = 45
+      var d = 10-a/2              Memória = 6
+      var e = 6*2/d               Memória = 2
+      var f = b%e+4/e             Memória = 3
+
+      */
+     /*Auto-Atribuições
+     var n = 3                    Memória = 3
+     n = n + 4 ou n += 4          Memória = 7
+     n = n - 5 ou n -= 5          Memória = 2
+     n = n * 4 ou n *= 4          Memória = 8
+     n = n / 2 ou n /= 4          Memória = 4
+     n = n ** 2 ou n **= 2        Memória = 16
+     n = n % 5 ou n %= 5          Memória = 1
+     
+     */
+    /*Operadores de incremento 
+    var x = 5                     Memória = 5 
+    x = x + 1 ou x++              Memória = 6 Adiciona +1
+    x = x - 1 ou x--              Memória = 5 Remove -1
+    
+    */
+   /*Operadores Relacionais
+   5 > 2                          Memória:True
+   7 < 4                          Memória:False
+   8 >= 8                         Memória:True
+   9 <= 7                         Memória:False
+   5 == 5                         Memória:True
+   4 != 4                         Memória:False
+   
+   */
+
+  /*Operadores de Identidade 
+  5 == 5                          Memória:True
+  5 == '5'                        Memória:True (Apenas no Js)
+  5 === '5'                       Memória:False (Valor e o tipo são igual)
+  5 === 5                         Memória:True
+  
+  */
+
+  /*Operadores lógicos
+   ! = Negação      (Não)
+    True ! False 
+   False ! True
+  --------------------------------------------------------------------------
+  && = Conjunção    (E)
+   True && True    =  True
+   True && False   =  False
+  False && True    =  False
+  False && False   =  False
+  --------------------------------------------------------------------------
+  || = Disjunção    (OU)                                   -- alt + 124
+   True || True    =  True
+   True || False   =  True
+  False || True    =  True
+  False || False   =  False
+
+  */
+
+  /*Operador Ternário
+  ?:
+  (Teste Lógico) ? Caso teste logico seja verdadeiro : Caso o teste lógico for false
+  Teste ? True : False
+  EX: Média >= 7 ? "Aprovado" : "Reprovado"
+  */
+    </script>
+</body>
+</html>

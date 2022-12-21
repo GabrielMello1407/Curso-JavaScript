@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primeiro Progama</title>
+    <title>Armazenando dados em variaveis</title>
     <style>
         body{
             background-color: rgba(0, 0, 0, 0.377);
@@ -26,9 +26,22 @@
 
     <!-- Janela de alerta (alert), Janela de confirmação (confirm), Janela de prompt(onde insire nome na janela), ctrl+L = limpa a tela do node -->
     <script>
-        window.alert('Minha primeira Mensagem')/* Coloca uma janela de alerta*/
-        window.confirm('Está gostando de JS?')/* Coloca uma janela de confirmação*/
-        window.prompt('Qual é seu nome?') /* coloca uma janela onde pode ser digitado*/
+        var n1 = Number(window.prompt('Digite um numero:'))
+        //String , para converter tem que usar o Number.parseInt para numero inteiro ou .parseFloat para numero real ou deixar só number
+        var n2 = Number(window.prompt('Digite outro numero:'))
+        //converter para para string usar s.toString() ou String(s)
+        var s = n1 + n2 /* concatenação*/
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`)
+        /*Faça uso da crase utilizando shift+´ para utilizar o $() com a variavel dentro placeholder*/
+
+        /*Formatação de Strings:
+        var s = 'javascript'
+        s.length --- quantos caracteres a string possui
+        s.toUpperCase() --- letras todas maiusculas
+        s.toLowerCase() --- letras todas minusculas
+        
+        */
+
         //Esse comando é para comentario que é permitido em apenas uma unica linha
         /*
         Identificadores : começa com letra,$ ou _ . Não podem começar com numeros , pode usar letras ou números, é possivel usar acentos e símbolos , não podem conter espaços, não podem ser palavras reservadas
