@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{
+            color: white;
+        }
+        body{
+            background-color: rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            
+        }
+    </style>
+    <title>Primeiros passos com DOM</title>
+</head>
+<body>
+    <!--DOM = DOCUMENT OBJECT MODEL , modelo de objetos para objetos , um conjunto de objetos dentro do navegador que da acesso aos componentes internos do website, não funciona dentro do node.js , sempre souber fazer a arvore DOM (WINDOW)-->
+    <!--O que tem dento do Window
+    Location
+    Document -> HTML -> Head e body
+    History
+    -->
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+        /*Elementos DOM podem ser acessados por:
+        MARCA = getElementsByTagName()
+        ID = getElementsById()
+        NOME = getElementsByName()
+        CLASSE = getElementsByClassName()
+        SELECTOR(CSS) = querySelector(), querySelectorAll()
+        */
+
+
+       /*TAG NAME , MARCA
+       var corpo = window.document.body
+       var p1 = window.document.getElementsByTagName('p')[1]*/
+       //colchetes mostra em qual paragrafo está
+
+
+        /*Seletor
+        var d = window.document.querySelector('div#msg')
+        d.style.background = 'blue'
+        */
+
+
+
+       /*ID
+       var d = window.document.getElementById('msg')
+       d.style.background = 'green'
+       d.innerText = 'Estou aguardando...'
+       window.document.getElementById('msg').innerText = 'Estou Aguardando'
+       */
+
+
+
+        /*NAME
+        var d = window.document.getElementsByName('msg')[0]
+        d.innerText = 'Olá!'
+        */
+
+    </script>
+</body>
+</html>
