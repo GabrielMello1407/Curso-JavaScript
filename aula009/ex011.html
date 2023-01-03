@@ -19,8 +19,12 @@
         function pais(){
         if(pa == 'Brasil'){
             res.innerHTML = `<p>Você é brasileiro</p>`
+            res.innerHTML += `Vivendo em ${pa}<br>`
         }
-            res.innerHTML += 'Você é Estrangeiro'
+        else{
+            res.innerHTML = 'Você é Estrangeiro <br>'
+            res.innerHTML += `Vivendo em ${pa}<br>`
+            }
      }
 
     </script>
