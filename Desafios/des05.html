@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <input type="button" value="Converter" onclick="clicar()">
+    <div id="res"></div>
+</body>
+    <script>
+        function clicar(){
+            var metro = Number(window.prompt('Digite uma Distância em metros(m)'))
+            var res = window.document.getElementById('res')
+            var km = metro/1000
+            var hm = metro/100
+            var dam = metro/10
+            var dm = metro*10
+            var cm = metro*100
+            var mm = metro*1000
+            res.innerHTML = `<h2><strong>A distância de ${metro} metros, corresponde a...</strong></h2><p>${km} quilômetros (Km)</p><p>${hm} hectômetros(Hm)</p><p>${dam} decâmetros(Dam)</p><p>${dm} decímetros (dm)</p><p>${cm} Centímetros (cm)</p><p>${mm} milímetros(mm)</p>`
+        }
+    </script>
+</html>
