@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calcular desconto</h1>
+    <input type="button" value="Desconto de 10 %" onclick="desc()">
+    <p>Clique no botão acima para iniciar.</p>
+    <div id="res"></div>
+</body>
+    <script>
+        function desc(){
+            var prod = window.prompt('Qual é o produto que você está comprando?')
+            var preco = Number(window.prompt(`Qual é o valor do ${prod}?`))
+            var desc = preco*0.1
+            var respdesc = preco-(preco*0.1)
+            res.innerHTML = `<h2>Calculando desconto de 10% ${prod}</h2><p>O preço original era de R$ ${preco}</p><p>Voce acaba de ganhar R$ ${desc} de desconto (-10%)</p><p>No fim , você vai pagar R$ ${respdesc} no produto ${prod}</p>`
+        }
+    </script>
+</html>
